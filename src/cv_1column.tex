@@ -1,0 +1,237 @@
+%%%%%%%%%%%%%%%%%
+% This is an example CV created using altacv.cls (v1.1.5, 1 December 2018) written by
+% LianTze Lim (liantze@gmail.com), based on the
+% Cv created by BusinessInsider at http://www.businessinsider.my/a-sample-resume-for-marissa-mayer-2016-7/?r=US&IR=T
+%
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+%% If you are using \orcid or academicons
+%% icons, make sure you have the academicons
+%% option here, and compile with XeLaTeX
+%% or LuaLaTeX.
+% \documentclass[10pt,a4paper,academicons]{altacv}
+
+%% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
+% \documentclass[10pt,a4paper,normalphoto]{altacv}
+
+\documentclass[11pt,a4paper,ragged2e]{src/altacv_1column}
+
+%% AltaCV uses the fontawesome and academicon fonts
+%% and packages.
+%% See texdoc.net/pkg/fontawecome and http://texdoc.net/pkg/academicons for full list of symbols. You MUST compile with XeLaTeX or LuaLaTeX if you want to use academicons.
+
+% Change the page layout if you need to
+\geometry{left=1cm,right=1cm,marginparwidth=1.2cm,marginparsep=1.2cm,top=1.25cm,bottom=1.25cm}
+
+% Change the font if you want to, depending on whether
+% you're using pdflatex or xelatex/lualatex
+\ifxetexorluatex
+  % If using xelatex or lualatex:
+  \setmainfont{Lato}
+\else
+  % If using pdflatex:
+  \usepackage[utf8]{inputenc}
+  \usepackage[T1]{fontenc}
+  \usepackage[default]{lato}
+  \usepackage{graphicx}
+  \usepackage{multicol}
+\fi
+
+% Change the colours if you want to
+\definecolor{VividPurple}{HTML}{3E0097}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{heading}{VividPurple}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+
+\begin{document}
+\name{Jonathan Sanchez}
+\tagline{Tech lead \& Proud Geek}
+\photo{2.5cm}{jonathan}
+\personalinfo{%
+  % Not all of these are required!
+  % You can add your own with \printinfo{symbol}{detail}
+	\email{my@email}
+  \phone{001 234 567}
+  \location{Open to relocation}
+%   \phone{000-00-0000}
+  \age{>18 years old}
+  
+  
+%  \homepage{***.tumblr.com/}
+%  \twitter{@***}
+\mailaddress{in earth}
+  \linkedin{linkedin.com/in/user}
+  
+%   \github{github.com/***
+%   \orcid{orcid.org/0000-0000-0000-0000} % Obviously making this up too. If you want to use this field (and also other academicons symbols), add "academicons" option to \documentclass{altacv}
+}
+
+
+
+%% Make the header extend all the way to the right, if you want.
+\begin{fullwidth}
+\makecvheader
+
+
+
+\end{fullwidth}
+
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+\AtBeginEnvironment{itemize}{\small}
+
+\cvsection{Profile}
+
+I am a very curious person who showed great skills on logic problems since my childhood along with a strong creativity. Amongst others, this made me start playing go, doing photography, dancing and playing guitar. 
+I then developed a huge interest in IT and everything in its orbit which conducted me to an engineering school.
+Starting my career as a backend developer, I never ceased to go further in my job.
+Along with my technical skills, my curiosity, my commitment and my communication skills lead me to work as much as a tech lead as a technical architect 
+in which I can share my technical knowledge and my thoughts about a bigger pictures.
+
+
+\cvsection{Core proficiencies}
+
+\setlength{\columnsep}{2cm}
+\setlength{\columnseprule}{0.25mm}                          
+\begin{multicols}{2}
+
+\cvtag{Resilient} 
+\cvtag{Curious}
+\cvtag{Creative}
+\cvtag{Like to plan \& leave nothing to chance}
+
+\smallskip
+\divider
+\smallskip
+
+\cvtag{Software Development \& Algorithms}
+\cvtag{Strong knowledge in database, networks \& OS}
+\cvtag{Process \& Tools definition}
+\cvtag{International project teams coordination}
+
+\cvskill{Problem Solving}{5}
+\cvskill{IT architecture}{4}
+\cvskill{Software Development}{5}
+\cvskill{Data queries}{5}
+\cvskill{Convincing people}{4}
+\cvskill{Network \& OS}{3}
+\cvskill{International projects}{5}
+\cvskill{Teams coordination}{4}
+\cvskill{Team management}{3}
+
+\end{multicols}
+
+\cvsection{Work Experience}
+
+\cvevent{Technical architect - AXA France}{Aubay}{Feb 2019 -- Ongoing}{Paris, France}{}{}
+\begin{itemize}
+\item Define and document IT solutions on multiple major products, based on business needs and architectural context
+\item Expose and convince architectural and technical teams about IT choosen solutions
+\item Share my vision about IT governance topics and long term architectural choices
+\end{itemize}
+
+\divider
+
+\cvevent{Ops \& Tech Lead - Euler Hermes}{Aubay}{Jun 2017 -- Jan 2019}{Paris, France}{Working with international teams}{}
+\begin{itemize}
+\item Ensured good health of 2 major worldwide websites and improved service quality by leading a dedicated workshop
+\item Made technical choices about platform evolution, and coordinated their set-up
+\item Set up reporting through data analysis for business and managing teams to present a clear service level overview and highlight improvments
+\item Discussed and defined new process and automatization tools, in the context of setting up agile methods
+\end{itemize}
+
+\divider
+
+\cvevent{Tech Lead - AXA Group solutions}{Capgemini}{Jan 2015 --  May 2017}{Paris, France}{Working with international teams}{}
+\begin{itemize}
+\item Analysed the software solution - newly bought to provide a new automated service to business - then defined and wrote documentation of target solution using feedback from business teams (from 6 countries)
+\item Been the leader on delivery and development subjects, from defining deliveries process and tools, to coordinating deployments and operations with international team (including a migration from on-premise to cloud) 
+\item Set up of data requests and reporting to analyse use cases and help defining new business rules
+\item Defined with enterprise architect specifications for additional tools to complete the offer with efficient business solutions
+\end{itemize}
+
+\cvsection{}
+\cvevent{Web developper/Consultant}{Self Employed}{Nov 2014 -- May 2016}{Paris, France}{Working with international teams}{}
+\begin{itemize}
+\item Gave technical advise and did web development, on my spare time, for small north american business (ex: breezing.com)
+\end{itemize}
+
+\divider
+
+
+
+\cvevent{Software engineer}{Capgemini}{Sept 2010 -- Dec 2014}{Paris, France}{Working with international teams}{}
+\begin{itemize}
+\item Took care of optimization subjects on the platform and on environment evolution (set up of virtualization, servers and database administration)
+\item Did technical management of a french and indian team
+\item Wrote technical specifications and developed new features
+\item Worked on Software Engineer community core-team for Capgemini, to provide tools and information to the whole community
+\end{itemize}
+
+\divider
+
+\cvevent{Intern Developer}{C-S}{Feb 2010 -- Jul 2010}{Paris, France}{}{}
+
+\begin{itemize}
+\item Benchmarked virtualization tools and defined a technical solution to do automatic deployment and configuration of a software
+\item Developed the solution and provided it to a project which was initialy using 8 bare-bone servers for their testing set
+\item Added a front-end for project users to be able to use it very easily
+\end{itemize}
+
+
+
+\cvsection{Education}
+
+\cvevent{M.S.\ in Computer Science - additional classes in network, OS, security, AI}{ENSIIE - french high-ranking engineering school}{Sept 2007 -- Aug 2010}{}{}{education}
+
+\divider
+
+\cvevent{Preparatory class for top french engineering schools - Specialized in Mathematics and Physics}{Lycée Pierre de Fermat}{Sept 2005 -- June 2007}{}{}{education}
+
+\dividercertification
+
+\cvevent{Certification: PH125.8x\ Data Science: Machine Learning}{HarvardX}{Sept 2019 -- Nov 2019}{}{}{education}
+
+\cvsection{Coding languages \& Tools}
+
+\smallskip
+\begin{itemize}
+\item \textbf{\color{accent}Professional usage: } Python, C++, SQL, Git, Linux
+\item \textbf{\color{accent}Proficient: } Javascript, ReactJS, Rust, Gitlab, Docker
+\item \textbf{\color{accent}Notions: } Go, Java, Shell Scripting, Cassandra, AWS, KVM
+\end{itemize}
+
+\cvsection{What I do at work}
+
+%\large
+
+% Adapted from @Jake's answer from http://tex.stackexchange.com/a/82729/226
+% \wheelchart{outer radius}{inner radius}{
+% comma-separated list of value/text width/color/detail}
+% Some ad-hoc tweaking to adjust the labels so that they don't overlap
+\wheelchart{1.8cm}{1.0cm}{%
+  35/10em/accent!50/Software development,
+  20/10em/accent/Thinking about a problem,
+  15/10em/accent!40/Define \& Discuss possible solutions,
+  15/10em/accent!30/Making schema of the solution,
+  15/10em/accent!60/Share my vision about future and targets
+}
+
+\end{document}

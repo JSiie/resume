@@ -1,0 +1,205 @@
+%%%%%%%%%%%%%%%%%
+% This is an example CV created using altacv.cls (v1.1.5, 1 December 2018) written by
+% LianTze Lim (liantze@gmail.com), based on the
+% Cv created by BusinessInsider at http://www.businessinsider.my/a-sample-resume-for-marissa-mayer-2016-7/?r=US&IR=T
+%
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+%% If you are using \orcid or academicons
+%% icons, make sure you have the academicons
+%% option here, and compile with XeLaTeX
+%% or LuaLaTeX.
+
+\documentclass[10pt,a4paper,ragged2e]{src/altacv}
+
+% Change the page layout if you need to
+\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1.25cm,bottom=1.25cm}
+
+% Change the font if you want to, depending on whether
+% you're using pdflatex or xelatex/lualatex
+\ifxetexorluatex
+  % If using xelatex or lualatex:
+  \setmainfont{Lato}
+\else
+  % If using pdflatex:
+  \usepackage[utf8]{inputenc}
+  \usepackage[T1]{fontenc}
+  \usepackage[default]{lato}
+  \usepackage{graphicx}
+\fi
+
+% Change the colours if you want to
+\definecolor{VividPurple}{HTML}{3E0097}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{heading}{VividPurple}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+
+\begin{document}
+\name{Jonathan Sanchez}
+\tagline{Senior software engineer}
+
+\photo{2.5cm}{assets/jonathan}
+\personalinfo{%
+  % Not all of these are required!
+  % You can add your own with \printinfo{symbol}{detail}
+  \email{my@email}
+  \phone{001 234 567}
+  %\location{Paris, FRANCE}
+%   \phone{000-00-0000}
+  \age{>18 years old}
+  
+  
+%  \homepage{***.tumblr.com/}
+%  \twitter{@***}
+\mailaddress{in earth}
+  \linkedin{linkedin.com/in/username}
+  
+%   \github{github.com/***} %
+%   \orcid{orcid.org/0000-0000-0000-0000} % Obviously making this up too. If you want to use this field (and also other academicons symbols), add "academicons" option to \documentclass{altacv}
+}
+
+
+
+%% Make the header extend all the way to the right, if you want.
+\begin{fullwidth}
+\makecvheader
+
+
+
+\end{fullwidth}
+
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+\AtBeginEnvironment{itemize}{\small}
+
+\cvsection[src/p1sidebar]{Profile}
+
+I am a very curious person who showed great skills on logic problems since my childhood along with a strong creativity. Amongst others, this made me start playing go, doing photography, dancing and playing guitar. 
+I then developed a huge interest in IT and everything in its orbit which conducted me to an engineering school.
+Starting my career as a backend developer, I never ceased to go further in my job.
+Along with my technical skills, my curiosity, my commitment and my communication skills lead me to became an IT architect 
+in which I can share my thoughts about a bigger pictures.
+
+%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
+%% You can always just use \marginpar{...} if you do
+%% not need to align the top of the contents to any
+%% \cvsection title in the "main" bar.
+\cvsection{Work Experience}
+
+\cvevent{IT architect - AXA France}{Aubay}{Feb 2019 -- Ongoing}{Paris, France}
+\begin{itemize}
+\item Define and document IT solutions based on business needs and architectural context
+\item Expose and convince architectural and technical teams about IT choosen solutions
+\item Share my vision about IT governance topics and long term architectural choices
+\end{itemize}
+
+\divider
+
+\cvevent{Application Officer - Euler Hermes}{Aubay}{Jun 2017 -- Jan 2019}{Paris, France}
+\small
+\raisebox{0.75ex}{%
+\makebox[0.5\linewidth][l]{\includegraphics[height=0.3cm]{assets/earth_grey}\hspace{0.5em}%
+\raisebox{0.3ex}{Working with international teams}}}
+\normalsize
+\hspace{3em}
+\begin{itemize}
+\item Ensured good health of 2 worldwide front-ends applications, solved incoming issues and lead task forces
+\item Made technical choices about platform evolution, and coordinated their\\ set-up
+\item Discussed and defined new process and automatization tools, in the context of setting up agile methods.
+\item Set up reporting, for business and managing teams
+\end{itemize}
+
+\divider
+
+\cvevent{Technical Leader - AXA Group solutions}{Capgemini}{Jan 2015 --  May 2017}{Paris, France}
+\small
+\raisebox{0.75ex}{%
+\makebox[0.5\linewidth][l]{\includegraphics[height=0.3cm]{assets/earth_grey}\hspace{0.5em}%
+\raisebox{0.3ex}{Working with international teams}}}
+\normalsize
+\hspace{3em}
+\begin{itemize}
+\item Analysed existing solution, defined and write documentation of target solution using feedback from business teams (from 6 countries)
+\item Defined with enterprise architect the new tools specifications to complete existing offer with efficient business solutions
+\item Defined deliveries process and source versionning, follow Spain development team and coordinates deployments and operations with teams from several countries
+\item Participated in workshop to move our software infrastructure from\\ On-premise servers to Cloud use
+\end{itemize}
+
+\medskip\medskip\medskip\smallskip
+
+\cvsection[src/p1bsidebar]{}
+\cvevent{Web developper/Consultant}{Self Employed}{Nov 2014 -- May 2016}{Paris, France}
+\small
+\raisebox{0.75ex}{%
+\makebox[0.5\linewidth][l]{\includegraphics[height=0.3cm]{assets/earth_grey}\hspace{0.5em}%
+\raisebox{0.3ex}{Working with international teams}}}
+\normalsize
+\hspace{3em}  
+\begin{itemize}
+\item Technical advise and web development, on my spare time, for small canadian and american business (ex: breezing.com)
+\end{itemize}
+
+\divider
+
+
+
+\cvevent{Technical Responsible}{Capgemini}{Sept 2010 -- Dec 2014}{Paris, France}
+\small
+\raisebox{0.75ex}{%
+\makebox[0.5\linewidth][l]{\includegraphics[height=0.3cm]{assets/earth_grey}\hspace{0.5em}%
+\raisebox{0.3ex}{Working with international teams}}}
+\normalsize
+\hspace{3em}
+\begin{itemize}
+\item Wrote technical specifications and developed new features
+\item Technical management of a french and indian team
+\item Took care of optimization subjects of the platform and on environment evolution (set up of virtualization, servers and database administration)
+\item Worked on Software Engineer community core-team for Capgemini, to provide tools and information to the whole community
+\end{itemize}
+
+\divider
+
+\cvevent{Intern Developer}{C-S}{Feb 2010 -- Jul 2010}{Paris, France}
+
+\begin{itemize}
+\item Benchmark virtualization tools and define a technical solution to do automatic deployment and configuration of a software
+\item Develop the solution and provide it to a project initialy using 8 bare-bone servers for their testing set
+\item Add a front-end for project users to be able to use it very easily
+\end{itemize}
+
+
+
+\cvsection{What I do at work}
+
+% Adapted from @Jake's answer from http://tex.stackexchange.com/a/82729/226
+% \wheelchart{outer radius}{inner radius}{
+% comma-separated list of value/text width/color/detail}
+% Some ad-hoc tweaking to adjust the labels so that they don't overlap
+\wheelchart{1.5cm}{0.5cm}{%
+  25/10em/accent!50/Software development,
+  20/10em/accent/Thinking about a problem,
+  20/10em/accent!40/Discuss about possible solutions,
+  15/10em/accent!30/Making schema of the solution,
+  20/10em/accent!60/Share my vision about future and targets
+}
+
+
+
+\end{document}
